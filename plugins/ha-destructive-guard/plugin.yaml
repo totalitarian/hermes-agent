@@ -1,6 +1,0 @@
-name: ha-destructive-guard
-version: "0.1.0"
-description: "Requires human [o]nce/[s]ession/[a]lways/[d]eny approval before destructive Home Assistant tool calls: ha_write_file, ha_delete_file, and ha_restart on the homeassistant_full MCP server, plus ha_call_service (MCP and built-in) for a fixed allowlist of destructive domain/service pairs (homeassistant.restart/stop, hassio host/addon lifecycle, recorder.purge*). All other HA tool calls (state reads, entity control, config reloads, todo, etc.) pass through ungated."
-author: "Lee / Hermes maintenance (2026-09-04)"
-hooks:
-  - pre_tool_call
